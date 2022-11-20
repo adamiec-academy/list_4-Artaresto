@@ -1,5 +1,5 @@
 def is_palindrome(text):
-    x = text[::-1].lower()
-    y = text.lower()
-    return y.replace(" ", "") == x.replace(" ", "")
+    reversed = (text[::-1].lower()).replace(" ", "")
+    original = (text.lower()).replace(" ", "")
+    return original == reversed
   
