@@ -1,2 +1,5 @@
 def is_palindrome(text):
-    return False
+    x = text[::-1].lower()
+    y = text.lower()
+    if y.replace(" ", "") == x.replace(" ", ""):
+        return True
