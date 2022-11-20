@@ -3,3 +3,5 @@ def is_palindrome(text):
     y = text.lower()
     if y.replace(" ", "") == x.replace(" ", ""):
         return True
+    else:
+        return False
