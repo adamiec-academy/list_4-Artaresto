@@ -7,7 +7,9 @@ def my_split(text):
             space = ""
         else:
             space += i
-
-    if space:
-        split.append(space)
-    return(split)
+   
+    while '' in split:
+        split.remove('')   
+ 
+    return(split) 
+      
