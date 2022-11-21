@@ -7,7 +7,9 @@ def my_split(text):
             space = ""
         else:
             space += i
+    if space:
+        split.append(space)
     better_split = list(filter(None, split))
  
-    return better_split 
+    return better_split
       
