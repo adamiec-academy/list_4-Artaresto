@@ -9,7 +9,7 @@ def min_max(data):
     return [minimal, maximal]
 '''
 
-def min_max_better(data):
+def min_max(data):
     sort = sorted(data)
     
     minimal_better = sort[0]
