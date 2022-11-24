@@ -1,3 +1,4 @@
+'''
 def min_max(data):
     minimal = maximal = data[0]
     for number in data[1:]:
@@ -6,7 +7,7 @@ def min_max(data):
         elif number > maximal:
             maximal = number
     return [minimal, maximal]
-
+'''
 
 def min_max_better(data):
     sort = sorted(data)
