@@ -6,8 +6,9 @@ def min_max(data):
             minimal = number
         elif number > maximal:
             maximal = number
-    return [minimal, maximal]
+    return (minimal, maximal)
 '''
+
 
 def min_max(data):
     sort = sorted(data)
@@ -15,4 +16,4 @@ def min_max(data):
     minimal_better = sort[0]
     maximal_better = sort[-1]
     
-    return[minimal_better, maximal_better]
+    return(minimal_better, maximal_better)
