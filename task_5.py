@@ -1,10 +1,10 @@
-# Remove this comment to confirm that this task is done
+
 
 from turtle import *
 
 
-BLOCK_SIZE = ...                 # Set size of a single block (square) on grid [in pixels]
-GRID_TOP_LEFT_CORNER = ..., ...  # Set the starting position of grid [in pixels]
+BLOCK_SIZE = 5                # Set size of a single block (square) on grid [in pixels]
+GRID_TOP_LEFT_CORNER = (-400, 400)  # Set the starting position of grid [in pixels]
 
 
 def get_image_data_from_file(file):
@@ -26,8 +26,16 @@ def to_pixels(x, y):  # Get pixel position of x, y grid position (function retur
 
 
 def square(x, y, colour):  # Draw a rectangle filled with colour in position x, y (grid position)
-    # TODO
-    pass
+def square(x, y, colour):  # Draw a rectangle filled with colour in position x, y (grid position)
+    penup()
+    goto(x,y)
+    pendown()
+    fillcolor(colour)
+    begin_fill()
+    for _ in range(4):
+        forward(BLOCK_SIZE)
+        right(90)
+    end_fill()
 
 
 tracer(0, 1)
